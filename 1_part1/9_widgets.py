@@ -19,6 +19,7 @@ from PyQt6.QtWidgets import (
     QSpinBox,
     QTimeEdit,
     QVBoxLayout,
+    QHBoxLayout,
     QWidget,
 )
 
@@ -27,7 +28,8 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         self.setWindowTitle("Widgets App")
-        layout = QVBoxLayout()
+#        layout = QVBoxLayout()
+        layout = QHBoxLayout()
         widgets = [
             QCheckBox,
             QComboBox,
